@@ -1,0 +1,66 @@
+
+Assignment 1.1
+
+1. Say True or False for the below statements:
+
+Prescriptive Analytics used to predict the future outcomes? - False
+
+Base R packages installed automatically? - True
+
+2. What is Recycling of elements in a vector?
+
+Recycling occurs when vector arithmetic is performed on multiple vectors of different sizes. If two vectors are of unequal length, the shorter one will be recycled in order to match the longer vector. 
+
+3. Give an example of recycling of elements.
+
+For example, the following vectors x and y have different lengths, and their sum is computed by recycling values of the shorter vector y.
+
+> x = c(1,2,3,4,5,6,7,8,9)
+> y = c(10,20,30)
+> x+y
+[1] 11 22 33 14 25 36 17 28 39
+
+
+================================================================================
+
+
+Assignment 1.3
+
+
+1) Diffrent methods to call a function 
+
+
+f <- function(abcdef, bcde1, bcde2) {
+  list(a = abcdef, b1 = bcde1, b2 = bcde2)
+}
+str(f(1, 2, 3))
+
+## List of 3
+##  $ a : num 1
+##  $ b1: num 2
+##  $ b2: num 3
+
+Calling a function given a list of arguments:
+============================================
+mean(1:10, na.rm = TRUE)
+
+## [1] 5.5
+
+Default and missing arguments:
+=============================
+f <- function(a = 1, b = 2) {
+  c(a, b)
+}
+f()
+
+## [1] 1 2
+
+2) True
+
+3)
+
+a) False
+b) False
+c) False
+d) True
+
